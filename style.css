@@ -5,18 +5,18 @@
 }
 
 :root {
-    --color-one: #F8E9A1;
-    --color-accent: #F76C6C;
-    --color-three: #A8D0E6;
-    --color-main: #374785;
+    --color-accent: #F8E9A1;
+    --color-main: #F76C6C;
     --color-secondary: #24305E;   
+    --color-one: #F8E9A1;
+    --color-three: #A8D0E6;
 }
 
 [data-theme="dark"] {
     background-color: #121212;
-    --color-main: #F76C6C;
-    --color-secondary: #F8E9A1;
-    --color-accent: #A8D0E6;
+    --color-main: #A8D0E6;
+    --color-secondary: whitesmoke;
+    --color-accent: #F76C6C;
 }
 
 body {
@@ -62,7 +62,7 @@ a:link {
 a:link:hover {
     text-decoration: underline;
     text-decoration-color: var(--color-accent);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
 }
 
 .right-header {
