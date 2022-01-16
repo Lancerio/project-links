@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-one: #F8E9A1;
+    --color-accent: #F76C6C;
+    --color-three: #A8D0E6;
+    --color-main: #374785;
+    --color-secondary: #24305E;   
+}
+
+[data-theme="dark"] {
+    background-color: #121212;
+    --color-main: #F76C6C;
+    --color-secondary: #F8E9A1;
+    --color-accent: #A8D0E6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px;
+    position: relative;
+}
+
+nav {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-main);
+    /* border-radius: 5px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0, 10%) */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-main);
+}
+
+i {
+    font-size: 1.6rem;
+    margin-right: 10px;
+    color: var(--color-main);
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+a:link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 2px;
+}
+
+.right-header {
+    display: flex;
+}
+
+.switch-container {
+    text-align: right;
+}
+
+.switch {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 25px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.slider::before {
+    background-color: #fff;
+    content: "";
+    bottom: 3px;
+    left: 3px;
+    height: 19px;
+    width: 19px;
+    position: absolute;
+}
+
+input:checked + .slider {
+    background-color: var(--color-main);
+}
+
+input:checked + .slider::before {
+    transform: translateX(15px);
+}
+
+p {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    margin-left: -15px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 10px 30px;
+}
+
+li {
+    color: var(--color-secondary);
+    margin: 5px;
+}
+
+.footer {
+    position: fixed;
+    padding: 6px;
+    font-size: .75rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #24305e;
+    color: white;
+    text-align: center;
+  }
+
+
