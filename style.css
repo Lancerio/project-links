@@ -69,6 +69,10 @@ a:link:hover {
     display: flex;
 }
 
+.fab {
+    font-size: 25px;
+}
+
 .switch-container {
     text-align: right;
 }
