@@ -7,7 +7,7 @@
 :root {
     --color-accent: #F8E9A1;
     --color-main: #F76C6C;
-    --color-secondary: #121212;   
+    --color-secondary: #444444;   
     --color-one: #F8E9A1;
     --color-three: #A8D0E6;
 }
@@ -47,6 +47,7 @@ nav {
     font-size: 1.60rem;
     font-weight: 700;   
     color: var(--color-main);
+    letter-spacing: 1px;
 }
 
 i {
@@ -54,9 +55,14 @@ i {
     color: var(--color-main);
 }
 
+li {
+    line-height: 1.5rem;
+}
+
 a:link {
     font-size: 1rem;
-    text-decoration: none;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #ccc;
     color: var(--color-secondary);
 }
 
